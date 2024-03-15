@@ -81,7 +81,7 @@ void evaluarMapa(const vector<vector<char>>& mapaOriginal) {
         }
     }
 
-    // Guardar los resultados en un archivo
+    // GUARDAR LOS RESULTADOS EN UN ARCHIVO
     ofstream archivo("resultados_tesoro.txt");
     if (archivo.is_open()) {
         archivo << "Posiciones que llevan a un tesoro:\n";
@@ -111,6 +111,7 @@ void evaluarMapa(const vector<vector<char>>& mapaOriginal) {
 }
 
 
+//IMPRIMIR EL MAPA
 void imprimirMapa(const vector<vector<char>>& T) {
     cout << "\n-----Mapa completo-----\n\n";
     cout << "  "; // Espacio para la esquina superior izquierda
@@ -128,12 +129,14 @@ void imprimirMapa(const vector<vector<char>>& T) {
     }
 }
 
+
+// BUSCAR EN LA LISTA
 bool buscarEnLista(const vector<pair<int, int>>& lista, const pair<int, int>& punto) {
     return find(lista.begin(), lista.end(), punto) != lista.end();
 }
 
 
-
+//MENSAJE SEGUN CARACTER DE LA POSICION
 void consultarPosicion(const pair<int, int>& punto) {
     if (buscarEnLista(posicionesSonTesoro, punto)) {
         cout << "\n\033[32mFelicidades, la posicion inicial es un TESORO.\n\033[0m";
@@ -152,6 +155,7 @@ void consultarPosicion(const pair<int, int>& punto) {
     }
 }
 
+//SOLICITAR COORDENADAS DE BUSQUEDA
 void buscarTesoro() {
     int x, y;
     cout << "\n\nIngrese las coordenadas para consultar (x y): ";
@@ -160,6 +164,8 @@ void buscarTesoro() {
 }
 
 
+
+//FUNCION PRONCIPAL
 void mapa() {
     int n, m; // Dimensiones del mapa
     cout << "Digite las dimensiones del mapa (n m): ";
