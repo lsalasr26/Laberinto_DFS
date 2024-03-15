@@ -20,9 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Mapa.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Mapa2.h">
       <Filter>Header Files</Filter>
     </ClInclude>

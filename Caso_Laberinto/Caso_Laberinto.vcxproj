@@ -185,7 +185,6 @@
     <ClCompile Include="Caso_Laberinto.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Mapa.h" />
     <ClInclude Include="Mapa2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
